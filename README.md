@@ -23,5 +23,5 @@ $h_\theta(x)=\theta^Tx$
 
 To adjust the parameters $\theta$ we can maximize the Likelihood $L(\theta)=p(\vec{y}|X;\theta)=\prod_{i=1} p(y^{(i)}|x^{(i)};\theta)$ with gradient descent.  
 Since the $log$-function is strictly increasing we can also maximize this, to make the algebra a bit easier.  
-$l(\theta)=\log(L(\theta))=\sum_{i=1} \log(p(y^{(i)}|x^{(i)};\theta))  
-=\sum_{i=1} \log \frac{1}{\sqrt{2\pi}}exp(-\frac{1}{2}(y-\theta^Tx)^2)$
+$l(\theta)=\log(L(\theta))=\sum_{i=1} \log(p(y^{(i)}|x^{(i)};\theta))$  
+$=\sum_{i=1} \log \frac{1}{\sqrt{2\pi}}exp(-\frac{1}{2}(y-\theta^Tx)^2)$
