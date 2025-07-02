@@ -8,9 +8,9 @@ Since the Gaussian distrubution is in the exponantial Family, we can apply a Gen
 
 Since the Vareince has no effect on $h_\theta(x)$ we can set it to 1 and are left with 
 
-\[p(y;\mu)=\frac{1}{\sqrt{2\pi}}exp(-\frac{1}{2}(y-\mu)^2)$
+$p(y;\mu)=\frac{1}{\sqrt{2\pi}}exp(-\frac{1}{2}(y-\mu)^2)$
 
-$p(y;\mu)=\frac{1}{\sqrt{2\pi}}exp(-\frac{1}{2}y^2)*exp(\mu y-\frac{1}{2}\mu^2)\]
+$p(y;\mu)=\frac{1}{\sqrt{2\pi}}exp(-\frac{1}{2}y^2)*exp(\mu y-\frac{1}{2}\mu^2)$
 
 From this we can see
 
