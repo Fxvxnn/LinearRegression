@@ -4,4 +4,6 @@ The linearRegression.cpp File contains the model and a Function to read in csv D
 
 ## Generalized Linear Models
 
-Since the Gaussian distrubution is in the exponantial Family, we can apply a Generalized Linear Model. We try to adjust the parameters $\theta$ such that $h_\theta(x)= E[y|x]$ is satisfied.
+Since the Gaussian distrubution is in the exponantial Family, we can apply a Generalized Linear Model. We try to adjust the parameters $\theta$ such that $h_\theta(x)= E[y|x;\theta]$ is satisfied. 
+
+
