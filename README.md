@@ -14,10 +14,7 @@ $p(y;\mu)=\frac{1}{\sqrt{2\pi}}exp(-\frac{1}{2}y^2)*exp(\mu y-\frac{1}{2}\mu^2)$
 
 From this we can see
 
-$b(y)=\frac{1}{\sqrt{2\pi}}exp(-\frac{1}{2}y^2)$
-
-$\eta=\mu$
-
-$T(y)=y$
-
-$a(\eta)=\frac{\mu^2}{2}=\frac{\eta^2}{2}$
+$b(y)=\frac{1}{\sqrt{2\pi}}exp(-\frac{1}{2}y^2)
+\eta=\mu
+T(y)=y
+a(\eta)=\frac{\mu^2}{2}=\frac{\eta^2}{2}$
