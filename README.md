@@ -21,5 +21,5 @@ Now $h_\theta(x)$ follows from $h_\theta(x)= E[y|x;\theta]$.
 $h_\theta(x)= E[y|x;\theta]=\mu=\eta$  
 $h_\theta(x)=\theta^Tx$
 
-To adjust the parameters $\theta$ we can maximize the Likelihood $L(\theta)=p(\vec{y}|X;\theta)=\prod_{i=1} p(y^(i)|x^(i);\theta)$ with gradient descent.  
+To adjust the parameters $\theta$ we can maximize the Likelihood $L(\theta)=p(\vec{y}|X;\theta)=\prod_{i=1} p(y^{(i)}|x^{(i)};\theta)$ with gradient descent.  
 Since the $log$-function is strictly increasing we can also maximize this, to make the algebra a bit easier.  
