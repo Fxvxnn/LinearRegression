@@ -21,7 +21,8 @@ Now $h_\theta(x)$ follows from $h_\theta(x)= E[y|x;\theta]$.
 $h_\theta(x)= E[y|x;\theta]=\mu=\eta$  
 $h_\theta(x)=\theta^Tx$
 
-To adjust the parameters $\theta$ we can maximize the Likelihood $L(\theta)=p(\vec{y}|X;\theta)=\prod_{i=1} p(y^{(i)}|x^{(i)};\theta)$ with gradient descent.  
+To adjust the parameters $\theta$ we can maximize the Likelihood $L(\theta)=p(\vec{y}|X;\theta)=\prod_{i=1}^{m} p(y^{(i)}|x^{(i)};\theta)$ with gradient descent.  
 Since the $log$-function is strictly increasing we can also maximize this, to make the algebra a bit easier.  
-$l(\theta)=\log(L(\theta))=\sum_{i=1} \log(p(y^{(i)}|x^{(i)};\theta))$  
-$=\sum_{i=1} \log \frac{1}{\sqrt{2\pi}}exp(-\frac{1}{2}(y-\theta^Tx)^2)$
+$l(\theta)=\log(L(\theta))=\sum_{i=1}^{m} \log(p(y^{(i)}|x^{(i)};\theta))$  
+$l(\theta)=\sum_{i=1}^{m} \log(\frac{1}{\sqrt{2\pi}\sigma}exp(-\frac{1}{2\sigma^2}(y^{(i)}-\theta^Tx^{(i)})^2))$
+$l(\theta)=m\log(\frac{1}{\sqrt{2\pi}\sigma})-\frac{1}{\sigma^2}*\frac{1}{2}\sum_{i=1}^{m}(y^{(i)}-\theta^Tx^{(i)})$
