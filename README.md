@@ -11,9 +11,12 @@ Since the Vareince has no effect on $h_\theta(x)$ we can set it to 1 and are lef
 $p(y;\mu)=\frac{1}{\sqrt{2\pi}}exp(-\frac{1}{2}(y-\mu)^2)$  
 $p(y;\mu)=\frac{1}{\sqrt{2\pi}}exp(-\frac{1}{2}y^2)*exp(\mu y-\frac{1}{2}\mu^2)$
 
-From this we can see
-
+From this we can see  
 $b(y)=\frac{1}{\sqrt{2\pi}}exp(-\frac{1}{2}y^2)$  
-$$\eta=\mu$  
+$\eta=\mu$  
 $T(y)=y \\$  
 $a(\eta)=\frac{\mu^2}{2}=\frac{\eta^2}{2}$
+
+Now $h_\theta(x)$ follows from $h_\theta(x)= E[y|x;\theta]$.  
+$h_\theta(x)= E[y|x;\theta]=\mu=\eta$  
+$h_\theta(x)=\theta^Tx$
