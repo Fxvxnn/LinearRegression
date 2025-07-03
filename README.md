@@ -32,4 +32,8 @@ Gradient Descent works by adjusting the paramters in the steepest direction. The
 I will derive the Update-rule with a single training example and then modify it for multiple.  
 $\frac{\partial}{\partial \theta_j} J(\theta) = \frac{\partial}{\partial \theta_j} \frac{1}{2} (y-\theta^Tx)^2 = \frac{\partial}{\partial \theta_j} \frac{1}{2} (h_\theta(x)-y)^2$  
 $\frac{\partial}{\partial \theta_j} J(\theta) = (h_\theta(x)-y) * \frac{\partial}{\partial \theta_j} (h_\theta(x)-y) = (h_\theta(x)-y) * \frac{\partial}{\partial \theta_j} (\sum_{i=0}\theta_i^Tx_i -y)$  
-$\frac{\partial}{\partial \theta_j} J(\theta) = (h_\theta(x)-y) * x_j$  
+$\frac{\partial}{\partial \theta_j} J(\theta) = (h_\theta(x)-y)x_j$
+
+For multiple training examples we can use either Batch Gradient Descent (BGD), by looking on every example for one step or we can use Stochastic Gradient Ascent (SGD) by adjusting the paremeters for every example.  
+BGD: $\theta_j \leftarrow \theta_j - \alpha \sum_{i=1}^{m} (h_\theta(x^{(i)})-y^{(i)})x_j (for every j)$  
+SGD: $for i=1 to m \{ \theta_j \leftarrow \theta_j - \alpha (h_\theta(x^{(i)})-y^{(i)})x_j (for every j) \}$
