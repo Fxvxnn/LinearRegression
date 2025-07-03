@@ -27,5 +27,5 @@ $l(\theta)=\log(L(\theta))=\sum_{i=1}^{m} \log(p(y^{(i)}|x^{(i)};\theta))$
 $l(\theta)=\sum_{i=1}^{m} \log(\frac{1}{\sqrt{2\pi}\sigma}exp(-\frac{1}{2\sigma^2}(y^{(i)}-\theta^Tx^{(i)})^2))=m\log(\frac{1}{\sqrt{2\pi}\sigma})-\frac{1}{\sigma^2}*\frac{1}{2}\sum_{i=1}^{m}(y^{(i)}-\theta^Tx^{(i)})^2$  
 From there we see, that the choice of $\theta$ doesn't depend on $\sigma$. Additional we see, maximizing $l(\theta)$ gives the same results as minimizing $\frac{1}{2}\sum_{i=1}^{m}(y^{(i)}-\theta^Tx^{(i)})^2$ which I define as my Cost-function $J(\theta)$.  
 
-Gradient Descent works by adjusting the paramters in the steepest direction. The update-rule says $\theta_j <- \theta_j - \alpha frac{\delta}{\delta \theta_j] J(\theta)$ with $\alpha$ being the learning rate.  
+Gradient Descent works by adjusting the paramters in the steepest direction. The update-rule says $\theta_j <- \theta_j - \alpha frac{\delta}{\delta \theta_j} J(\theta)$ with $\alpha$ being the learning rate.  
 
