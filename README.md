@@ -29,5 +29,5 @@ From there we see, that the choice of $\theta$ doesn't depend on $\sigma$. Addit
 
 Gradient Descent works by adjusting the paramters in the steepest direction. The update-rule says $\theta_j \leftarrow \theta_j - \alpha \frac{\partial}{\partial \theta_j} J(\theta)$ with $\alpha$ being the learning rate.  
 
-I will derive the Update-rule with a single training example and then modify it for multiple.
-$\frac{\partial}{\partial \theta_j} J(\theta) = $
+I will derive the Update-rule with a single training example and then modify it for multiple.  
+$\frac{\partial}{\partial \theta_j} J(\theta) = \frac{1}{2} (y-\theta^Tx)^2 = \frac{1}{2} (h_\theta(x)-y)^2$
