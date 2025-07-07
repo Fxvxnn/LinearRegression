@@ -1,6 +1,7 @@
 # LinearRegression
 
-The linearRegression.cpp File contains the model and a Function to read in csv Data. I have trained the model on the Student_Performance Dataset (https://www.kaggle.com/datasets/nikhil7280/student-performance-multiple-linear-regression) with a MSE of 4.55.
+The linearRegression.cpp File contains the model and a Function to read in csv Data. I have trained the model on the Student_Performance Dataset (https://www.kaggle.com/datasets/nikhil7280/student-performance-multiple-linear-regression) with a MSE of 4.55.  
+I also used the algorithmn on the HousingPrices Dataset (https://www.kaggle.com/datasets/yasserh/housing-prices-dataset) with an MSE of 0.05 after normalizig Area and Price.
 
 ## Generalized Linear Models
 
